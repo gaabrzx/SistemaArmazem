@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="SRC/style.css" />
+    <title>Sistema de Armazém</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sistema de Armazém</h1>
+      <form id="itemForm">
+        <label for="itemName">Nome do Item:</label>
+        <input type="text" id="itemName" required />
+        <label for="itemPrice">Preço do Item:</label>
+        <input type="number" id="itemPrice" required />
+        <label for="itemQuantity">Quantidade do Item:</label>
+        <input type="number" id="itemQuantity" required />
+        <button type="submit">Adicionar Item</button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome do Item</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="itemTableBody">
+          <!-- Items will be added here -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="SRC/script.js"></script>
+  </body>
+</html>
